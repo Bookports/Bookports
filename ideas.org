@@ -1,6 +1,5 @@
 #+TITLE: Emergence
 #+AUTHOR: Dom Rodriguez
-#+DATE: 10/05/2016
 
 * Emergence ideas
 ** Language
