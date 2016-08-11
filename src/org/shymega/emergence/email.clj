@@ -28,25 +28,25 @@ emergence." (carica.core/config :org-name) (carica.core/config :org-name) (caric
 
 (defn email-send-smtp [recipient subject body]
   "Send an email via SMTP."
-  (timbre/debug "I've been called, and should use SMTP - time to prepare.")
+  (log/trace "Called. preparing connection.")
   (let [conn {:host (carica.core/config :mail-server)
               :ssl (carica.core/config :mail-server-ssl)
               :user (carica.core/config :mail-server-from-addr)
               :pass (get-password)}]
-    (timbre/debug "Connection mapping produced.")
-    (timbre/debug "Attempting to send..")
-    (timbre/info "Sending an email via SMTP..")
+    (log/trace "Connection object produced.")
+    (log/trace "Sending..")
+    (log/info "Sending an email via the SMTP protocol.")
     (postal/send-message conn {:from (:user conn)
                                :to recipient
                                :subject subject
                                :body body})
-    (timbre/info "Success!")))
+    (log/info "Success!")))
 
 (defn email-send-sendmail [recipient subject body]
   "Send an email via Sendmail."
-  (timbre/debug "I've been called, and should use Sendmail - time to prepare.")
-  (timbre/debug "Attempting to send..")
-  (timbre/info "Sending an email via Sendmail..")
+  (log/debug "I've been called, and should use Sendmail - time to prepare.")
+  (log/debug "Attempting to send..")
+  (log/info "Sending an email via Sendmail..")
   (postal/send-message {:from (carica.core/config :mail-server-from-addr)
                         :to recipient
                         :subject subject
