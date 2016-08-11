@@ -1,7 +1,7 @@
 (defproject emergence "0.1.0-alpha"
   :description "A free software ILS system."
 
-  :url "https://projects.shymega.org.uk/emergence/emergence"
+  :url "https://p.shymega.org.uk/shymega/emergence"
 
   :license {:name "Apache License v2.0"
             :url "http://www.apache.org/licenses/"}
