@@ -7,6 +7,7 @@
       (do
       )
     ))
+
 (def config-file
   (let [file (java.lang.System/getenv "EMERGENCE_CONFIG_F")]
     (if-not file
