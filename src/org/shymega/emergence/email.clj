@@ -8,7 +8,7 @@
 
 (defn get-password [& args]
   "Get email password for SMTP server."
-  (log/timbre/debug "Retrieving SMTP password...")
+  (log/debug "Retrieving SMTP password...")
   (let [password (carica.core/config :mail-server-from-pwd)]
     (if password
       password
