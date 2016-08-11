@@ -1,5 +1,4 @@
 (ns org.shymega.emergence.config
-  (:require [clojure.tools.logging :as log])
   (:gen-class))
 
 (def config-file
