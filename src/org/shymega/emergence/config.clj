@@ -1,6 +1,12 @@
 (ns org.shymega.emergence.config
   (:gen-class))
 
+(defn- get-config-file []
+  (let [file (java.lang.System/getenv "EMERGENCE_CONFIG")]
+    (if-not file
+      (do
+      )
+    ))
 (def config-file
   (let [file (java.lang.System/getenv "EMERGENCE_CONFIG_F")]
     (if-not file
