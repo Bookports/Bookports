@@ -14,17 +14,6 @@
       password
       (log/warn "Unable to get password for SMTP."))))
 
-(def welcome-email-msg
-  (format "Welcome to %s Libraries!
-This is an automated email from the %s Library Services.
-
-You have successfully been signed up to %s Libraries.
-
-Library branch: %s
-
-Yours,
-emergence." (carica.core/config :org-name) (carica.core/config :org-name) (carica.core/config :org-name) (carica.core/config :branch-name)))
-
 
 (defn email-send-smtp [recipient subject body]
   "Send an email via SMTP."
