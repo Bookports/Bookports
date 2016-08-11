@@ -53,20 +53,11 @@ emergence." (carica.core/config :org-name) (carica.core/config :org-name) (caric
                         :body body}))
 
 
-(defn welcome-email-send [recipient]
-  "Send a welcome email."
-  (timbre/debug "Constructing connection...")
-  ;; We need to determine if we are using SMTP, or Sendmail.
-  ;; If we send via SMTP, then we use the authentication details as outlined in
-  ;; the configuration file.
-  
-  ;; If we are sending via Sendmail, then we henceforth assume that we are running on a server,
-  ;; that contains the SMTP component, e.g Postfix.
-  
-  (case (carica.core/config :mail-server-send-type)
-    "smtp" (email-send-smtp recipient (format "Welcome to %s Libraries!"
-                                              (carica.core/config :org-name))
-                            welcome-email-msg)
-    "sendmail" nil
-    "default" (warn "Unable to detect sending type.")))
-
+(defn email-send [recipient subject body]
+  "Send an email."
+  (case (carica.core/config :send-type)
+    "smtp" (email-send-smtp recipient subject
+                            body)
+    "sendmail" (email-send-sendmail recipient subject
+                                    body)
+    "default" (log/warn "Unable to detect sending")))
