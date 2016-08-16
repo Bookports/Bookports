@@ -1,17 +1,15 @@
 (ns org.shymega.emergence.config
+  (:require [taoensso.timbre :as log])
   (:gen-class))
 
-(defn- get-config-file []
-  (let [file (java.lang.System/getenv "EMERGENCE_CONFIG")]
-    (if-not file
-      (do
-      )
-    ))
+(defn- get-config-file-location []
+  (log/trace "Getting configuration file.")
+  (if-let [file (java.lang.System/getenv "EMERGENCE_CONFIG")]
+    file
+    (do
+      (log/fatal "Unable to get location of configuration file.")
+      (log/fatal "We cannot continue. Bailing out!")
+      (System/exit 12))))
 
 (def config-file
-  (let [file (java.lang.System/getenv "EMERGENCE_CONFIG_F")]
-    (if-not file
-      (do
-        (log/error "EID: 001/A - Unable to get configuration env var. Unable to continue.")
-        (System/exit 0))
-      file)))
+  (get-config-file-location))
