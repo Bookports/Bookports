@@ -11,6 +11,7 @@
                  [cheshire "5.6.3"]
                  [clj-time "0.12.0"]
                  [sonian/carica "1.2.1"]
+                 [liberator "0.14.1"]
                  [com.draines/postal "1.11.3"]]
 
   :main org.shymega.emergence.core
