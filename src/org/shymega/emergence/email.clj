@@ -17,7 +17,7 @@
 
 (defn email-send-smtp [recipient subject body]
   "Send an email via SMTP."
-  (log/trace "Called. preparing connection.")
+  (log/trace "Called, preparing connection.")
   (let [conn {:host (carica.core/config :mail-server)
               :ssl (carica.core/config :mail-server-ssl)
               :user (carica.core/config :mail-server-from-addr)
