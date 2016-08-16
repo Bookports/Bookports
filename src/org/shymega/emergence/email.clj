@@ -9,11 +9,9 @@
 (defn get-password [& args]
   "Get email password for SMTP server."
   (log/debug "Retrieving SMTP password...")
-  (let [password (carica.core/config :mail-server-from-pwd)]
-    (if password
-      password
-      (log/warn "Unable to get password for SMTP."))))
-
+  (if-let [password (carica.core/config :mail-server-from-pwd)]
+    password
+    (log/warn "Cannot get a password for SMTP.")))
 
 (defn email-send-smtp [recipient subject body]
   "Send an email via SMTP."
