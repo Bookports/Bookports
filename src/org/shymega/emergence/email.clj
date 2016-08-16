@@ -2,7 +2,7 @@
   (:require [postal.core :as postal]
             [carica.core :as carica]
             [taoensso.timbre :as log]
-            [org.shymea.emergence.config :as config]
+            [org.shymega.emergence.config :as config]
             [cheshire.core :as ches])
   (:gen-class))
 
