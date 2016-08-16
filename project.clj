@@ -12,6 +12,7 @@
                  [clj-time "0.12.0"]
                  [sonian/carica "1.2.1"]
                  [liberator "0.14.1"]
+                 [com.novemberain/monger "3.0.2"]
                  [com.draines/postal "1.11.3"]]
 
   :main org.shymega.emergence.core
