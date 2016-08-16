@@ -13,7 +13,7 @@
                  [sonian/carica "1.2.1"]
                  [com.draines/postal "1.11.3"]]
 
-  :main emergence.core
+  :main org.shymega.emergence.core
 
   :target-path "target/%s"
 
