@@ -13,9 +13,15 @@
                  [sonian/carica "1.2.1"]
                  [liberator "0.14.1"]
                  [com.ashafa/clutch "0.4.0"]
+                 [speclj "3.3.2"]
                  [com.draines/postal "1.11.3"]]
 
   :main org.shymega.emergence.core
+
+  :plugins [[speclj "3.3.2"]
+            [lein-cloverage "1.0.7-SNAPSHOT"]]
+
+  :test-paths ["spec"]
 
   :target-path "target/%s"
 
