@@ -1,8 +1,5 @@
 #!/bin/bash
 
-set -eu
-set -o pipefail
-
 lein deps
 
 exit

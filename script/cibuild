@@ -1,8 +1,5 @@
 #!/bin/bash
 
-set -eu
-set -o pipefail
-
 if [[ -z "${TRAVIS_BUILD_DIR}" ]]; then
     START_CWD="${PWD}"
 else
