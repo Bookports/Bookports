@@ -14,7 +14,9 @@
                  [liberator "0.14.1"]
                  [com.ashafa/clutch "0.4.0"]
                  [speclj "3.3.2"]
-                 [com.draines/postal "1.11.3"]]
+                 [com.draines/postal "1.11.3"]
+                 [danlentz/clj-uuid "0.1.6"]
+                 [listora/uuid "0.1.2"]]
 
   :main org.shymega.emergence.core
 
