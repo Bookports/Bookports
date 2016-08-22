@@ -16,7 +16,8 @@
                  [speclj "3.3.2"]
                  [com.draines/postal "1.11.3"]
                  [danlentz/clj-uuid "0.1.6"]
-                 [listora/uuid "0.1.2"]]
+                 [listora/uuid "0.1.2"]
+                 [clj-isbn "0.0.7"]]
 
   :main org.shymega.emergence.core
 
