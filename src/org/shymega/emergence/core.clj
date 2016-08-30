@@ -1,6 +1,7 @@
 (ns org.shymega.emergence.core
   (:require [org.shymega.emergence.config :as config]
-            [org.shymega.emergence.email :as email])
+            [org.shymega.emergence.email :as email]
+            [clj-uuid :as uuid])
   (:gen-class))
 
 (defn -main
