@@ -8,6 +8,9 @@ fi
 
 cd "${START_CWD}" || exit 1
 
+echo "Building.."
+lein compile
+
 echo "Testing.."
 lein spec
 
