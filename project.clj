@@ -25,6 +25,7 @@
 
   :plugins [[speclj "3.3.2"]
             [lein-codox "0.9.6"]
+            [lein-kibit "0.1.2"]
             [lein-cloverage "1.0.7-SNAPSHOT"]]
 
   :test-paths ["spec"]
