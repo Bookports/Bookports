@@ -1,6 +1,6 @@
-# Emergence ideas
+# emergence ideas
 
-## Language
+## Desired goals
 
 1.  Probably going to be using Clojure for the 'nodes'.
 
