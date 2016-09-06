@@ -21,7 +21,7 @@ all:
 	${MAKE} doc_info
 
 build:
-	${LEIN} ${LEIN_OPTS} build
+	${LEIN} ${LEIN_OPTS} compile
 
 bootstrap:
 	${BOOTSTRAP} ${BOOTSTRAP_OPTS}
