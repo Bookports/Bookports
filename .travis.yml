@@ -20,3 +20,8 @@ script:
 
 after_script:
   - "script/after_cibuild"
+
+addons:
+  apt:
+    packages:
+      - texinfo
