@@ -23,6 +23,7 @@
   :main org.shymega.emergence.core
 
   :plugins [[speclj "3.3.2"]
+            [lein-codox "0.9.6"]
             [lein-cloverage "1.0.7-SNAPSHOT"]]
 
   :test-paths ["spec"]
