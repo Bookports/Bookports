@@ -2,9 +2,7 @@
 
 ## Desired goals
 
-1.  Probably going to be using Clojure for the 'nodes'.
+### Minimal
 
-2.  Most likely using Clojure for the desktop GUI, _but_ it is
-    possible, with the REST API to make third party clients, which
-    is a empowering feature.
+emergence itself should be minimal, and be extended with Addons.
 
