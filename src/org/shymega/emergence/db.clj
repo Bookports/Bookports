@@ -1,6 +1,5 @@
 (ns org.shymega.emergence.db
   (:require [com.ashafa.clutch :as couch]
-            [com.ashafa.clutch :as clutch]
             [taoensso.timbre :as log])
   (:gen-class))
 
