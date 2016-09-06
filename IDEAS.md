@@ -3,7 +3,8 @@
 ## Language
 
 1.  Probably going to be using Clojure for the 'nodes'.
-2.  Most likely using Clojure for the desktop GUI, **but** it is
-    possible, with the RESTful API to make your **own** clients, which
+
+2.  Most likely using Clojure for the desktop GUI, _but_ it is
+    possible, with the REST API to make third party clients, which
     is a empowering feature.
 
