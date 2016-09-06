@@ -40,7 +40,7 @@ test:
 	${LEIN} ${LEIN_OPTS} spec
 
 doc:
-	${LEIN}${LEIN_OPTS} doc
+	${LEIN}${LEIN_OPTS} codox
 
 doc_info:
 	cd docs/; \
