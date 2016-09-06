@@ -16,3 +16,4 @@ install:
 
 script:
   - "script/cibuild"
+  - "script/docs"
