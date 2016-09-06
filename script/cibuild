@@ -11,4 +11,7 @@ cd "${START_CWD}" || exit 1
 echo "Testing.."
 lein spec
 
+echo "Linting.."
+lein kibit
+
 exit
