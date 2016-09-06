@@ -37,10 +37,7 @@ check:
 	${MAKE} test
 
 test:
-	${LEIN} ${LEIN_OPTS} test
-
-bench:
-	${LEIN} ${LEIN_OPTS} bench
+	${LEIN} ${LEIN_OPTS} spec
 
 doc:
 	${LEIN}${LEIN_OPTS} doc
