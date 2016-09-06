@@ -1,8 +1,6 @@
-Emergence ideas
-===============
+# Emergence ideas
 
-Language
---------
+## Language
 
 1.  Probably going to be using Clojure for the 'nodes'.
 2.  Most likely using Clojure for the desktop GUI, **but** it is
