@@ -22,6 +22,8 @@
               :pass (get-password)}]
     (log/trace "Connection object produced.")
     (log/trace "Sending..")
+    (log/trace (format "*** EMAIL DETAILS ***\nFrom: %s\nRecipient: %s\nSubject: %s\n"))
+
     (log/info "Sending an email via the SMTP protocol.")
     (postal/send-message conn {:from (:user conn)
                                :to recipient
