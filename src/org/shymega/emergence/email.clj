@@ -54,6 +54,6 @@
     "default"
     (log/error "Unable to detect sending method!")
     (log/error "Bailing out, not gonna send a email. Sorry.")
-    {"op": "EMAIL_SEND",
-     "error": "EMAIL_SEND_NO_METHOD",
-     "success?": false}))
+    {:op "EMAIL_SEND",
+     :error "EMAIL_SEND_NO_METHOD",
+     :success? false}))
