@@ -43,8 +43,15 @@
 (defn email-send [recipient subject body]
   "Send an email."
   (case (carica.core/config :send-type)
-    "smtp" (email-send-smtp recipient subject
-                            body)
-    "sendmail" (email-send-sendmail recipient subject
-                                    body)
-    "default" (log/warn "Unable to detect sending")))
+    "smtp"
+    (email-send-smtp recipient subject
+                     body)
+    "sendmail"
+    (email-send-sendmail recipient subject
+                         body)
+    "default"
+    (log/error "Unable to detect sending method!")
+    (log/error "Bailing out, not gonna send a email. Sorry.")
+    {"op": "EMAIL_SEND",
+     "error": "EMAIL_SEND_NO_METHOD",
+     "success?": false}))
