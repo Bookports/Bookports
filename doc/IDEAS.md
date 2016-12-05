@@ -16,6 +16,9 @@ This will include the `nodes` from the P2P network implemented, and
 backed by CouchDB and Clojure.
 
 Wait- why use CouchDB? RDBMS would work fine as well, no?
+Postgres would be useful as well. It can support JSON as well, which
+is essentially what CouchDB is.. apart from the fact it uses sharding
+and a Map/Reduce system.
 
 ### GUI
 
