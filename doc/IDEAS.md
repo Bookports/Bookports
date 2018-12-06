@@ -1,28 +1,49 @@
-# emergence ideas
+# Emergence ideas
 
-## Desired goals
+## Minimalist design.
 
-### Minimal
-
-emergence itself should be minimal, and be extended with Addons.
+Emergence should be relatively minimal, extendable with plugins, but
+not have a high learning curve for installation, and should have an
+option for a out of the box experience.
 
 ## Language choice
 
-### Nodes
+Clojure (JVM/Java) will be used for the server component.
 
-Probably going to be using Clojure for emergence.
+RESTful API to be provided (with Swagger docs) for GUI clients, and
+third-party integrations.
 
-This will include the `nodes` from the P2P network implemented, and
-backed by CouchDB and Clojure.
+Program self-recover tactics.
 
-Wait- why use CouchDB? RDBMS would work fine as well, no?
-Postgres would be useful as well. It can support JSON as well, which
-is essentially what CouchDB is.. apart from the fact it uses sharding
-and a Map/Reduce system.
+Metrics support (InfluxDB/Telegraf, other metrics).
 
-### GUI
+## GUI
 
-Using Clojure for the desktop GUI.
+Native GUI toolkits will be used for the frontends. Example, web
+client, Windows client, Android/iOS client, Linux/Mac client.
 
-It is possible with the provided REST API for one to make a third
-party client for emergence.
+### Mobile app.
+
+Staff can use for shelving, stocking books. Handheld device for
+library operations.
+
+Library patrons can also use - to check out books, share book details
+with friends, or save on a 'wishlist' for later borrowing.
+
+## Topology
+Decentralisation _might_ be an option, but I think for the majority of
+installations, centralisation is a more appropriate design. We could
+allow for offline usage for when the central server is offline.
+
+I remember from my volunteering at libraries that the ILS might go
+down, and we'd have to use an offline version. However, it was not
+easy to use, and also knocked the self-service machines
+offline. Self-service machines and ILS clients should have a built-in
+offline version, and queue up changes to go through a synchronisation
+process upon the ILS server goes back online.
+
+## Database
+
+The database will be backed by PostgreSQL only, to ensure all efforts
+can be focused on one RDBMS. There might be scope for other RDBMS
+systems in the future...
