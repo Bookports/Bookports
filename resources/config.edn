@@ -1,7 +1,0 @@
-{:org-name "JCA"
- :branch-name "Edge"
- :mail-server "mail.jca.gov.uk"
- :mail-server-from-addr "libraries@jca.gov.uk"
- :mail-server-send-type "smtp"
- :mail-server-ssl false
- :mail-server-from-pwd ""}
