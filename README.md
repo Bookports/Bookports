@@ -1,21 +1,20 @@
 # Emergence
 
-A free software ILS.
+An open-source ILS for the digital library era. 
 
 ## Usage
 
-# FIXME
-
-    $ java -jar emergence-0.1.0-standalone.jar [args]
+In heavy development, not ready for production use yet.
 
 # Ideas
 
-See [here][ideas] for a overview of my ideas for `emergence`.
+See [here][ideas] for a overview of ideas for Emergence.
 
 ## License
 
-Copyright © 2016 Dom Rodriguez
+Copyright © 2016 Dom Rodriguez.
 
-See LICENSE for licensing.
+See [LICENSE][license] for licensing terms.
 
-[ideas]: IDEAS.md
+[ideas]: /doc/IDEAS.md
+[license]: /LICENSE
