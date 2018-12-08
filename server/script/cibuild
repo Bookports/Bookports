@@ -1,10 +1,8 @@
-#!/bin/bash -e
+#!/bin/bash
 
-if [[ -z "${TRAVIS_BUILD_DIR}" ]]; then
-    START_CWD="${PWD}"
-else
-    START_CWD="${TRAVIS_BUILD_DIR}"
-fi
+set -eu
+
+START_CWD="${TRAVIS_BUILD_DIR:${PWD}"
 
 cd "${START_CWD}" || exit 1
 
