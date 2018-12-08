@@ -1,10 +1,11 @@
 # Emergence ideas
 
-## Minimalist design.
+## Out of the box experience
 
-Emergence should be relatively minimal, extendable with plugins, but
-not have a high learning curve for installation, and should have an
-option for a out of the box experience.
+Emergence should be an out of the box package, with standard ILS
+modules ready to go.
+
+However, it should be extendable with plugins for later customisation.
 
 ## Language choice
 
@@ -15,7 +16,8 @@ third-party integrations.
 
 The program should be able to recover from most faults.
 
-Metrics support (InfluxDB/Telegraf, other metrics).
+Metrics support would be useful for monitoring the ILS
+health. InfluxDB could be used for that.
 
 ## GUI
 
@@ -29,6 +31,14 @@ library operations.
 
 Library patrons can also use the app to check out books, share book details
 with friends, or save on a 'wishlist' for later borrowing.
+
+However, not sure how anti-theft detectors would work with that, as
+only the barcode would be scanned, and RFID tags wouldn't be disabled
+-- not everyone has a NFC-capable phone, so to assume RFID tags would
+be easy to disable _universally_ is a poor assumptions.
+
+On the other hand, are anti-theft detectors necessary, other than to
+alert staff of a book being taken out without being scanned?
 
 ## Topology
 Decentralisation _might_ be an option, but I think for the majority of
