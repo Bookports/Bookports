@@ -1,4 +1,0 @@
-(require '[clj-isbn.core :as isbn])
-(isbn/get-publication-element 978-3-16-148410-0)
-(isbn/get-publication-element "978-3-16-148410-0")
-(isbn/get-registrant-element "978-3-16-148410-0")
