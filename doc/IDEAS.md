@@ -14,6 +14,12 @@ Clojure will be used for the server component.
 RESTful API to be provided (with Swagger docs) for GUI clients, and
 third-party integrations.
 
+Open Data.
+
+The OPAC module is separate from the core server, and
+run on a separate Clojure application. It will utilise the same REST API that
+the core provides, but in a restricted level of access.
+
 The program should be able to recover from most faults.
 
 Metrics support would be useful for monitoring the ILS
@@ -35,17 +41,18 @@ with friends, or save on a 'wishlist' for later borrowing.
 However, not sure how anti-theft detectors would work with that, as
 only the barcode would be scanned, and RFID tags wouldn't be disabled
 -- not everyone has a NFC-capable phone, so to assume RFID tags would
-be easy to disable _universally_ is a poor assumptions.
+be easy to disable _universally_ is a poor assumption.
 
 On the other hand, are anti-theft detectors necessary, other than to
 alert staff of a book being taken out without being scanned?
 
 ## Topology
+
 Decentralisation _might_ be an option, but I think for the majority of
 installations, centralisation is a more appropriate design. We could
 allow for offline usage for when the central server is offline.
 
-I remember from my volunteering at libraries that the ILS might go
+I remember from my volunteering at libraries that the ILS could go
 down, and we'd have to use an offline version. However, it was not
 easy to use, and the outage would also knock the self-service machines
 offline.
@@ -54,10 +61,10 @@ Self-service machines and ILS clients should have a built-in
 offline version, and queue up changes to go through a synchronisation
 process upon the ILS server goes back online.
 
-One thing to consider with that is conflict resolution handling.
+One thing to consider with that is conflict resolution handling, upon
+resynchronisation.
 
 ## Database
 
 The database will be backed by PostgreSQL only, to ensure all efforts
-can be focused on one RDBMS. There might be scope for other RDBMS
-systems in the future...
+can be focused on one RDBMS.
