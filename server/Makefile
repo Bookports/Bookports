@@ -20,7 +20,7 @@ test:
 	${LEIN} ${LEIN_OPTS} spec
 
 docker-build:
-	docker build -t emergence/server .
+	docker build -t shelves/server .
 
 doc:
 	+${MAKE} info -C ../doc

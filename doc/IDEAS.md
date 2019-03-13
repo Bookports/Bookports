@@ -1,8 +1,8 @@
-# Emergence ideas
+# Shelves ideas
 
 ## Out of the box experience
 
-Emergence should be an out of the box package, with standard ILS
+Shelves should be an out of the box package, with standard ILS
 modules ready to go.
 
 However, it should be extendable with plugins for later customisation.
@@ -66,5 +66,8 @@ resynchronisation.
 
 ## Database
 
-The database will be backed by PostgreSQL only, to ensure all efforts
-can be focused on one RDBMS.
+The backend will be supported by PostgreSQL.
+
+* Digital library card
+    QR code, or barcode (GTIN?)
+* Text message alerts.
