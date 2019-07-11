@@ -1,8 +1,8 @@
-# Shelves ideas
+# Bookports ideas
 
 ## Out of the box experience
 
-Shelves should be an out of the box package, with standard ILS
+Bookports should be an out of the box package, with standard ILS
 modules ready to go.
 
 However, it should be extendable with plugins for later customisation.
@@ -30,21 +30,14 @@ health. InfluxDB could be used for that.
 Native GUI toolkits will be used for the frontends. Example, web
 client, Windows client, Android/iOS client, Linux/Mac client.
 
-### Mobile app.
+### Mobile app
 
+Handheld mobile app for library staff.
 Staff can use for shelving, stocking books. Handheld device for
 library operations.
 
 Library patrons can also use the app to check out books, share book details
 with friends, or save on a 'wishlist' for later borrowing.
-
-However, not sure how anti-theft detectors would work with that, as
-only the barcode would be scanned, and RFID tags wouldn't be disabled
--- not everyone has a NFC-capable phone, so to assume RFID tags would
-be easy to disable _universally_ is a poor assumption.
-
-On the other hand, are anti-theft detectors necessary, other than to
-alert staff of a book being taken out without being scanned?
 
 ## Topology
 
@@ -70,4 +63,9 @@ The backend will be supported by PostgreSQL.
 
 * Digital library card
     QR code, or barcode (GTIN?)
+    NFC?
 * Text message alerts.
+
+Books notifications.
+Recommended books.
+Notification when book is in stock.

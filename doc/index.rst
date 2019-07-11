@@ -1,9 +1,9 @@
-.. shelves documentation master file, created by
+.. bookports documentation master file, created by
    sphinx-quickstart on Tue Sep  6 20:15:44 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to shelves's documentation!
+Welcome to bookports's documentation!
 =====================================
 
 Contents:

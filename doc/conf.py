@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# shelves documentation build configuration file, created by
+# bookports documentation build configuration file, created by
 # sphinx-quickstart on Tue Sep  6 20:15:44 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -49,7 +49,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'shelves'
+project = 'bookports'
 copyright = '2016, Dom Rodriguez'
 author = 'Dom Rodriguez'
 
@@ -203,7 +203,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'shelvesdoc'
+htmlhelp_basename = 'bookportsdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -225,7 +225,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'shelves.tex', 'shelves Documentation',
+    (master_doc, 'bookports.tex', 'bookports Documentation',
      'Dom Rodriguez', 'manual'),
 ]
 
@@ -255,7 +255,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'shelves', 'shelves Documentation',
+    (master_doc, 'bookports', 'bookports Documentation',
      [author], 1)
 ]
 
@@ -269,8 +269,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'shelves', 'shelves Documentation',
-     author, 'shelves', 'One line description of project.',
+    (master_doc, 'bookports', 'bookports Documentation',
+     author, 'bookports', 'One line description of project.',
      'Miscellaneous'),
 ]
 
