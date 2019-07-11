@@ -1,6 +1,9 @@
-# Emergence
+# Bookports
+### The porthole to the age of knowledge.
 
-An open-source ILS for the digital library era. 
+An open-source, customisable and modular ILS (Integrated Library System) for the future library era.
+
+Bookports is written in Java, and aims to have a minimum version of Java 11.
 
 ## Usage
 

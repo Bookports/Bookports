@@ -9,7 +9,7 @@ However, it should be extendable with plugins for later customisation.
 
 ## Language choice
 
-Clojure will be used for the server component.
+Java will be used for the server component.
 
 RESTful API to be provided (with Swagger docs) for GUI clients, and
 third-party integrations.
@@ -40,6 +40,10 @@ Library patrons can also use the app to check out books, share book details
 with friends, or save on a 'wishlist' for later borrowing.
 
 ## Topology
+
+Bookports will connect to a centralised server.
+
+
 
 Decentralisation _might_ be an option, but I think for the majority of
 installations, centralisation is a more appropriate design. We could
