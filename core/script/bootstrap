@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eu
+
+lein deps
+
+pip install --user sphinx sphinx-autobuild
+
+exit

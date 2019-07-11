@@ -1,0 +1,1 @@
+(do (clojure.core/ns org.bookports.server.servlet (:gen-class :extends javax.servlet.http.HttpServlet)) (def service-method) (clojure.core/defn -service [servlet__6978__auto__ request__6979__auto__ response__6980__auto__] (service-method servlet__6978__auto__ request__6979__auto__ response__6980__auto__)))

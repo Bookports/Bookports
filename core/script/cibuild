@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eu
+
+START_CWD="${TRAVIS_BUILD_DIR:${PWD}"
+
+cd "${START_CWD}" || exit 1
+
+echo "Building.."
+lein compile
+
+echo "Testing.."
+lein spec
+
+echo "Linting.."
+lein kibit
+
+exit
