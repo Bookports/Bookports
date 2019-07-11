@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -eu
-
-make doc
-
-make doc_info
