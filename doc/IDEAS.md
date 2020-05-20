@@ -1,4 +1,4 @@
-# BookLib - ideas & notes
+# Bookports - ideas & notes
 
 ## Out of the box experience
 
