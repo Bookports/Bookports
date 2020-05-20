@@ -1,24 +1,36 @@
-# Bookports ideas
+# BookLib - ideas & notes
 
 ## Out of the box experience
 
 Bookports should be an out of the box package, with standard ILS
 modules ready to go.
 
-However, it should be extendable with plugins for later customisation.
+However, it should be extendable with plugins.
 
-## Language choice
+## Language
 
-Java will be used for the server component.
+Scala will be used for the server component.
 
-RESTful API to be provided (with Swagger docs) for GUI clients, and
-third-party integrations.
+The server component will run on the Apache Tomcat platform.
+
+A RESTful API will be provided, along with Swagger documentation.
+
+## APIs
+
+As well as a REST API, there will be a SOAP to REST translation proxy available
+as part of an optional package.
+
+The APIs will be used both internally for the main librarian and administration
+services, as well as the OPAC, and third-party integrations.
+
+## Modules
 
 Open Data.
 
-The OPAC module is separate from the core server, and
-run on a separate Clojure application. It will utilise the same REST API that
-the core provides, but in a restricted level of access.
+The OPAC is a separate module from the server component. It will run on the
+Apache Tomcat platform as well.
+
+The OPAC will use the server's REST API.
 
 The program should be able to recover from most faults.
 
@@ -32,6 +44,11 @@ client, Windows client, Android/iOS client, Linux/Mac client.
 
 ### Mobile app
 
+#### Library staff
+
+Mobile app for iOS+Android for library staff.
+
+This can be used as a mobile interface to the ILS,
 Handheld mobile app for library staff.
 Staff can use for shelving, stocking books. Handheld device for
 library operations.
@@ -43,20 +60,11 @@ with friends, or save on a 'wishlist' for later borrowing.
 
 Bookports will connect to a centralised server.
 
+A decentralised topology could be considered in the future.
 
-
-Decentralisation _might_ be an option, but I think for the majority of
-installations, centralisation is a more appropriate design. We could
-allow for offline usage for when the central server is offline.
-
-I remember from my volunteering at libraries that the ILS could go
-down, and we'd have to use an offline version. However, it was not
-easy to use, and the outage would also knock the self-service machines
-offline.
-
-Self-service machines and ILS clients should have a built-in
-offline version, and queue up changes to go through a synchronisation
-process upon the ILS server goes back online.
+Self-service machines and ILS clients should have a built-in offline
+version, and queue up changes to go through a synchronisation process
+upon the ILS server goes back online.
 
 One thing to consider with that is conflict resolution handling, upon
 resynchronisation.
@@ -65,9 +73,12 @@ resynchronisation.
 
 The backend will be supported by PostgreSQL.
 
+## Patrons
+
 * Digital library card
-    QR code, or barcode (GTIN?)
-    NFC?
+   - QR code, or barcode (GTIN?)
+   - NFC?
+
 * Text message alerts.
 
 Books notifications.
