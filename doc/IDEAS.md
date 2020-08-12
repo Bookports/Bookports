@@ -9,13 +9,16 @@ However, it should be extendable with plugins.
 
 ## Language
 
+Java awill be used for the server component.
+
+It will use h
 Scala will be used for the server component.
 
 The server component will run on the Apache Tomcat platform.
 
 A RESTful API will be provided, along with Swagger documentation.
 
-## APIs
+## API.
 
 As well as a REST API, there will be a SOAP to REST translation proxy available
 as part of an optional package.
