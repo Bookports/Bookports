@@ -9,10 +9,7 @@ However, it should be extendable with plugins.
 
 ## Language
 
-Java awill be used for the server component.
-
-It will use h
-Scala will be used for the server component.
+Java and Spring will be used for the server component.
 
 The server component will run on the Apache Tomcat platform.
 
