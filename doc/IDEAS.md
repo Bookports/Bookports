@@ -60,8 +60,6 @@ with friends, or save on a 'wishlist' for later borrowing.
 
 Bookports will connect to a centralised server.
 
-A decentralised topology could be considered in the future.
-
 Self-service machines and ILS clients should have a built-in offline
 version, and queue up changes to go through a synchronisation process
 upon the ILS server goes back online.
